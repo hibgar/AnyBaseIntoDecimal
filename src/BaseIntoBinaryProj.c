@@ -23,8 +23,12 @@ int power(int base, unsigned int exp) {
 int main(void) {
 	puts("!!!Hello World!!!"); /* prints !!!Hello World!!! */
 
-	int starting_base = 5;
-	int starting_number = 23;
+	int starting_base;
+	printf("Enter a starting base: ");
+	scanf("%d", &starting_base);
+	int starting_number;
+	printf("Enter a base #: ");
+	scanf("%d", &starting_number);
 	char starting_number_string[5];
 
 	sprintf(starting_number_string, "%d", starting_number);
